@@ -1,0 +1,29 @@
+@mixin flex($align: stretch, $justify: flex-start, $direction: column){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    // можно писать if else
+}
+
+@mixin text($weight: 600, $size: 30px, $line-height: 30px, $text-align: center, $uppercase : uppercase, $color: $white){
+
+font-weight: $weight;
+font-size:  $size;
+line-height: $line-height;
+text-align: $text-align;
+text-transform: $uppercase;
+color: $color;
+}
+
+@mixin tabletStyles {
+    @media screen and (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin mobileStyles {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}

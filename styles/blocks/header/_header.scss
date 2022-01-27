@@ -1,0 +1,19 @@
+.header {
+  background-color: $primary-color;
+
+  &__text {
+    @include text()
+//@mixin text($weight: 600, $size: 30px, $line-height: 30px, $text-align: center, $uppercase : uppercase, $color: $white){
+
+  }
+
+  &__round {
+
+  }
+
+  &__logo {
+
+  }
+}
+
+

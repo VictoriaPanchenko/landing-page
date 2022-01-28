@@ -1,0 +1,8 @@
+.process {
+
+
+  &__title {
+    @include text($weight: 700, $uppercase: uppercase, $color: $yellow);
+  }
+
+}

@@ -7,12 +7,121 @@
 
 .header {
   background-color: #9960F6;
+  position: relative;
+  overflow: hidden;
 }
 .header__text {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 30px;
   line-height: 30px;
-  text-align: center;
+  text-align: start;
   text-transform: uppercase;
+  color: #FFDB00;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+  max-width: calc(100% - 50px * 2);
+  padding: 40px 50px;
+}
+.header__round {
+  position: absolute;
+  width: 565px;
+  height: 565px;
+  left: 1035px;
+  top: -160px;
+  background: #3530FF;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+.header__logo {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  z-index: 1;
+}
+.header__flex-container {
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: normal;
+  width: calc(100% - 50px * 2);
+  margin: 0 50px;
+}
+.header__pic-container {
+  position: relative;
+  max-height: 600px;
+}
+.header__limo-pic {
+  width: 100%;
+}
+.header__sticker {
+  background-image: url(../../../images/pineapple.png);
+  width: 149px;
+  height: 146px;
+  position: absolute;
+  bottom: -36.36px;
+  right: -36.36px;
+}
+.header__text-container {
+  z-index: 1;
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+  flex-direction: column;
+  align-content: normal;
+  margin-top: 278px;
+}
+.header__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: start;
+  text-transform: none;
   color: #FFFFFF;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+  max-width: 457px;
+}
+
+.standard-btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+  text-align: center;
+  text-transform: none;
+  color: #1E3264;
+  letter-spacing: 0.3px;
+  padding: 0;
+  margin: 0;
+  width: 163px;
+  height: 55px;
+  border-radius: 0px;
+  background-color: #FFDB00;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.standard-btn:hover {
+  border: 2px solid #1E3264;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.text-line {
+  background-color: #CEF564;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: start;
+  text-transform: uppercase;
+  color: #016450;
+  letter-spacing: normal;
+  padding: 0;
+  margin: 0;
+  max-height: 76px;
+  margin-top: 50px;
 }/*# sourceMappingURL=index.css.map */

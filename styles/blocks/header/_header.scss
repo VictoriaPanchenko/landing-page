@@ -1,18 +1,66 @@
 .header {
-  background-color: $primary-color;
+  background-color: $light-purple;
+  position: relative;
+  overflow: hidden;
 
   &__text {
-    @include text()
-//@mixin text($weight: 600, $size: 30px, $line-height: 30px, $text-align: center, $uppercase : uppercase, $color: $white){
+    @include text($weight: 700, $uppercase: uppercase, $color: $yellow);
 
+    max-width: calc(100% - 50px * 2);
+    padding: 40px 50px;
   }
 
   &__round {
-
+    position: absolute;
+    width: 565px;
+height: 565px;
+left: 1035px;
+top: -160px;
+background: #3530FF;
+opacity: 0.2;
+border-radius: 50%;
   }
 
   &__logo {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    z-index: 1;
+  }
 
+  &__flex-container {
+    @include flex();
+    width: calc(100% - 50px * 2);
+    margin: 0 50px;
+  }
+
+  &__pic-container {
+    position: relative;
+    max-height: 600px;
+  }
+
+  &__limo-pic {
+    width: 100%;
+  }
+
+  &__sticker {
+    background-image: url(../../../images/pineapple.png);
+    width: 149px;
+    height: 146px;
+    position: absolute;
+    bottom: -36.36px;
+    right: -36.36px;
+  }
+
+  &__text-container {
+    z-index: 1;
+    @include flex($direction: column);
+    margin-top: 278px;
+  }
+
+  &__title {
+    @include text($weight: 600,  $size: 40px, $line-height: 48px, $color: $white);
+    max-width: 457px;
   }
 }
 

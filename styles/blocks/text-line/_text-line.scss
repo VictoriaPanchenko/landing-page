@@ -1,0 +1,6 @@
+.text-line {
+  background-color: $light-green;
+  @include text($weight: 700, $line-height: 36px, $uppercase: uppercase, $color: $dark-green);
+  max-height: 76px;
+  margin-top: 50px;
+}

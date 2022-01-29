@@ -1,0 +1,54 @@
+.process {
+  background-color: $white;
+
+  &__title {
+    @include text($weight: 500, $size: 60px, $line-height: 60px, $text-align:center, $letter-spacing: 0.5px, $color: $dark-blue);
+
+    padding: 120px 0;
+  }
+
+  &__container {
+    width: calc(100% - 50px * 2);
+    margin: 0 50px;
+    background-color: $light-purple;
+    box-sizing: border-box;
+    padding: 90px 100px;
+  }
+
+  &__flex {
+    @include flex();
+    //width: calc(100% - 100px * 2);
+  }
+
+  &__strawberry-pic {
+
+  }
+
+  &__nav-container {
+    background-color: $dark-purple;
+    width: calc(100% - 50px * 2);
+    margin: 0 50px;
+    box-sizing: border-box;
+    padding: 90px 100px;
+    position: relative;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include text($weight: 700, $size: 32px, $line-height: 50.4px, $color: $white);
+
+  }
+
+  &__list-item {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    min-width: 255px;
+    margin-top: 30px;
+  }
+
+  &__list-item:first-child {
+    margin-top: 0;
+  }
+
+}

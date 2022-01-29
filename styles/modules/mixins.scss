@@ -8,6 +8,16 @@
     // можно писать if else
 }
 
+@mixin decorateRound($radius: 185px, $color: #E1FD2C, $border: 3px solid #016450){
+  position: absolute;
+  width: $radius;
+  height: $radius;
+  border-radius: 50%;
+  background: $color;
+  border: $border;
+  box-sizing: border-box;
+}
+
 @mixin text($weight: 600, $size: 30px, $line-height: 30px, $text-align: start, $uppercase : none, $color: $white, $letter-spacing: normal){
 
 font-weight: $weight;

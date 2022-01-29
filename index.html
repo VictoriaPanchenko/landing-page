@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mesto">
-  <meta name="keywords" content="путешествие, места">
+  <meta name="description" content="Limonade">
+  <meta name="keywords" content="лимонад">
   <meta name="author" content="Victoria Panchenko">
   <link rel="stylesheet" href="./styles/index.css">
   <title>Лимонады</title>
@@ -21,7 +21,7 @@
     </div>
     <div class="header__text-container">
     <h1 class="header__title">Вкусные лимонады из&nbsp;фруктов</h1>
-      <button class="standard-btn standard-btn_type_more">Подробнее</button>
+      <button class="standard-btn">Подробнее</button>
   </div>
     </div>
   <div class="text-line">Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — </div>
@@ -29,9 +29,65 @@
   <main class="main">
     <section class="process">
       <h2 class="process__title">Как это работает?</h2>
-      div.
+      <div class="process__container">
+        <div class="process__flex">
+          <div class="flex-text">
+        <h3 class="container-title">Вкусы</h3>
+        <p class="container-text">Пейте фрукты, а не газировку со вкусовыми добавками, наши лимонады на 100% натуральны!</p>
+      </div>
+        <img class="process__strawberry-pic" src="./images/limonades-strawberry-desktop.png" alt="Клубничный лимонад">
+
+      </div>
+      </div>
+      <div class="process__nav-container">
+        <div class="process__flex">
+          <div class="flex-text">
+        <h3 class="container-title">Состав</h3>
+        <p class="container-text">Наши натуральные лимонады делаются из натуральных компонентов.</p>
+      </div>
+      <ul class="process__list">
+        <li class="process__list-item">Сок</li>
+        <li class="process__list-item">Пюре</li>
+        <li class="process__list-item">Вода</li>
+        <li class="process__list-item">Пузыри</li>
+        <li class="process__list-item">Витамины</li>
+      </ul>
+      </div>
+      <div class="decorative-element decorative-element_type_light"></div>
+      <div class="decorative-element decorative-element_type_dark"></div>
+      <button class="standard-btn">Подробнее</button>
+      </div>
     </section>
     <section class="samples">
+      <div class="samples__flex">
+      <h2 class="samples__main-title">SODA — натуральные лимонады!</h2>
+      <img class="samples__mango-pic" src="./images/limonades-mango-desktop.png" alt="Манго лимонад">
+      <div class="samples__sticker"></div>
+      </div>
+      <div class="samples__tastes">
+        <div class="samples__text-area">
+        <h3 class="samples__title">Семплы</h3>
+        <p class="samples__text">Хотите получить семплы каждого вкуса, чтобы понять что нравится вам? заполните форму!</p>
+        </div>
+        <div class="samples__form">
+          <h4 class="samples__form-header">Семплы</h4>
+          <form class="form" name="add-card">
+            <div class="form__fullname">
+              <div class="form__name-container">
+              <h5 class="form__text">Имя *</h5>
+              <input name="name" type="text" class="form__input">
+            </div>
+            <div class="form__name-container">
+            <h5 class="form__text">Фамилия *</h5>
+            <input name="surname" type="text" class="form__input">
+            </div>
+           </div>
+           <h5 class="form__text">Email *</h5>
+            <input name="email" type="text" class="form__input">
+            <button class="standard-btn standard-btn_type_inquiry">Запросить</button>
+          </form>
+        </div>
+      </div>
 
     </section>
   </main>

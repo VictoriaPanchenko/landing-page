@@ -1,0 +1,4 @@
+.container-title {
+  @include text($weight: 600, $size: 52px, $line-height: 48px, $color: $white);
+  max-width: 386px;
+}

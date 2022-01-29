@@ -1,0 +1,51 @@
+.samples {
+  position: relative;
+
+  &__flex {
+    @include flex($justify: space-evenly, $align-items: center);
+    max-height: 580px;
+  }
+
+  &__main-title {
+    @include text($size: 60px, $line-height: 67px, $weight: 500, $letter-spacing: 0.3px, $color: $dark-blue);
+    max-width: 460px;
+  }
+
+  &__mango-pic {
+    margin-top: 70px;
+    z-index: -1;
+    align-self: flex-start;
+  }
+
+  &__sticker {
+    background-image: url(../../../images/mango.png);
+    background-position: center;
+    width: 172px;
+    height: 172px;
+    position: absolute;
+    top: 100px;
+    left: 710px;
+  }
+
+  &__tastes {
+    background-color: $light-green;
+    @include flex();
+    min-height: 664px;
+  }
+
+  &__text-area {
+    max-width: 457px;
+  }
+
+  &__title {
+    @include text($size: 60px, $line-height: 65px, $weight: 500, $letter-spacing: 0.3px, $color: $dark-blue);
+  }
+
+  &__text {
+    @include text($size: 20px, $line-height: 29px, $weight: 400, $letter-spacing: 0.3px, $color: $dark-blue);
+    margin-top: 48px;
+  }
+
+
+
+}

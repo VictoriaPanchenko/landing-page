@@ -11,14 +11,10 @@
   }
 
   &__round {
-    position: absolute;
-    width: 565px;
-height: 565px;
-left: 1035px;
-top: -160px;
-background: #3530FF;
-opacity: 0.2;
-border-radius: 50%;
+    @include decorateRound($radius: 565px, $color: #3530FF);
+    left: 1035px;
+    top: -160px;
+    opacity: 0.2;
   }
 
   &__logo {

@@ -13,11 +13,25 @@
     background-color: $light-purple;
     box-sizing: border-box;
     padding: 90px 100px;
+
+    @include tabletStyles {
+      padding: 60px;
+    }
   }
 
   &__flex {
     @include flex();
     //width: calc(100% - 100px * 2);
+    @include tabletStyles {
+      flex-direction: column;
+      min-width: 548px;
+    }
+  }
+
+  &__flex-text {
+    @include tabletStyles {
+      padding-bottom: 60px;
+    }
   }
 
   &__strawberry-pic {
@@ -38,7 +52,7 @@
     margin: 0;
     padding: 0;
     @include text($weight: 700, $size: 32px, $line-height: 50.4px, $color: $white);
-
+    z-index: 1;
   }
 
   &__list-item {

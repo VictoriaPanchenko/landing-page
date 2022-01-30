@@ -5,9 +5,12 @@
 
   &__text {
     @include text($weight: 700, $uppercase: uppercase, $color: $yellow);
-
     max-width: calc(100% - 50px * 2);
     padding: 40px 50px;
+
+    @include tabletStyles {
+      padding: 40px 50px 126px 50px;
+    }
   }
 
   &__round {
@@ -22,17 +25,31 @@
     right: 50px;
     top: 50px;
     z-index: 1;
+
+    @include tabletStyles {
+      top: 40px;
+      width: 128px;
+    }
   }
 
   &__flex-container {
-    @include flex();
+    @include flex($justify:normal);
     width: calc(100% - 50px * 2);
     margin: 0 50px;
+
+    @include tabletStyles {
+      flex-direction: column;
+    }
   }
 
   &__pic-container {
     position: relative;
     max-height: 600px;
+
+    @include tabletStyles {
+      min-width: 668px;
+      min-height: 514;
+    }
   }
 
   &__limo-pic {
@@ -46,17 +63,38 @@
     position: absolute;
     bottom: -36.36px;
     right: -36.36px;
+
+    @include tabletStyles {
+      bottom: 20.64px;
+      right: 20.15px;
+    }
   }
 
   &__text-container {
     z-index: 1;
     @include flex($direction: column);
-    margin-top: 278px;
+    padding: 278px 0 0 100px;
+
+    @include tabletStyles {
+      padding: 50px 0 0 0;
+      flex-direction: row;
+    }
   }
 
   &__title {
     @include text($weight: 600,  $size: 40px, $line-height: 48px, $color: $white);
     max-width: 457px;
+
+    @include tabletStyles {
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .header__round {
+    display: none;
   }
 }
 

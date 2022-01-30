@@ -69,26 +69,25 @@
         <h3 class="samples__title">Семплы</h3>
         <p class="samples__text">Хотите получить семплы каждого вкуса, чтобы понять что нравится вам? заполните форму!</p>
         </div>
-        <div class="samples__form">
+        <div class="samples__form-wrapper">
           <h4 class="samples__form-title">Семплы</h4>
-          <form class="form" name="add-card">
-            <div class="form__fullname">
-              <div class="form__name-container">
-              <h5 class="form__text">Имя *</h5>
-              <input name="name" type="text" class="form__input">
+          <form class="samples__form">
+            <div class="samples__name">
+                <input type="text" class="samples__input" id="name" name="name">
+                <label for="name" class="samples__label">Имя *</label>
             </div>
-            <div class="form__name-container">
-            <h5 class="form__text">Фамилия *</h5>
-            <input name="surname" type="text" class="form__input">
+            <div class="samples__lastname">
+                <input type="text" class="samples__input" id="lastname" name="lastname">
+                <label for="lastname" class="samples__label">Фамилия *</label>
             </div>
-           </div>
-           <h5 class="form__text">Email *</h5>
-            <input name="email" type="text" class="form__input">
+            <div class="samples__email">
+                <input type="text" class="samples__input" id="email" name="email">
+                <label for="email" class="samples__label">Email *</label>
+            </div>
             <button class="standard-btn standard-btn_type_inquiry">Запросить</button>
           </form>
         </div>
       </div>
-
     </section>
   </main>
   <footer class="footer">

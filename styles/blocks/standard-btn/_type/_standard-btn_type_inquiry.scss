@@ -1,6 +1,7 @@
 .standard-btn_type_inquiry {
   @include text($weight: 500, $size: 18px, $line-height: 31px, $text-align: center, $color: $white, $letter-spacing: 0.3px);
   background-color: $light-purple;
+  margin-top: 167px;
 
   &:hover {
     border: 2px solid #E1FD2C;

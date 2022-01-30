@@ -8,10 +8,11 @@
   margin: 0;
   border: 0;
   cursor: pointer;
+
+  &:hover {
+    border: 2px solid $dark-blue;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
 }
 
-.standard-btn:hover {
-  border: 2px solid $dark-blue;
-  box-sizing: border-box;
-  border-radius: 10px;
-}

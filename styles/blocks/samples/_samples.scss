@@ -29,7 +29,7 @@
 
   &__tastes {
     background-color: $light-green;
-    @include flex();
+    @include flex($align-items: center);
     min-height: 664px;
   }
 
@@ -46,6 +46,16 @@
     margin-top: 48px;
   }
 
+  &__form {
+    background-color: $dark-green;
+    border-radius: 0px;
+  }
+
+  &__form-title {
+    @include text($size: 32px, $line-height: 40px, $weight: 500, $color: $white);
+    padding-top: 24px;
+    padding-left: 30px;
+  }
 
 
 }

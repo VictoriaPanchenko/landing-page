@@ -45,10 +45,11 @@
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     min-width: 255px;
     margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
-  &__list-item:first-child {
-    margin-top: 0;
-  }
 
 }

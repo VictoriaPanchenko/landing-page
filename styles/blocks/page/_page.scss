@@ -3,4 +3,7 @@
     font-family: $font-family;
     background-color: $white;
     max-width: 1440px;
+    min-width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }

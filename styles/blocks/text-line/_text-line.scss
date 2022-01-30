@@ -1,6 +1,11 @@
 .text-line {
   background-color: $light-green;
-  @include text($weight: 700, $line-height: 36px, $uppercase: uppercase, $color: $dark-green);
-  max-height: 76px;
-  margin-top: 50px;
+  //min-height: 76px;
+  position: relative;
+  white-space: nowrap;
+  @include text($weight: 700, $line-height: 36px, $text-align: center, $uppercase: uppercase, $color: $dark-green);
+  margin: 50px 0 0 0;
+  width: 120%;
+  left: -16px;
+  padding: 20px 0;
 }

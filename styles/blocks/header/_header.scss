@@ -11,6 +11,11 @@
     @include tabletStyles {
       padding: 40px 50px 126px 50px;
     }
+
+    @include mobileStyles {
+      padding: 20px 20px 50px 20px;
+      font-size: 20px;
+    }
   }
 
   &__round {
@@ -30,6 +35,12 @@
       top: 40px;
       width: 128px;
     }
+
+    @include mobileStyles {
+      top: 20px;
+      right: 20px;
+      width: 94px;
+    }
   }
 
   &__flex-container {
@@ -40,6 +51,10 @@
     @include tabletStyles {
       flex-direction: column;
     }
+
+    @include mobileStyles {
+      margin: 0 20px;
+    }
   }
 
   &__pic-container {
@@ -48,6 +63,10 @@
 
     @include tabletStyles {
       max-width: 668px;
+    }
+
+    @include mobileStyles {
+      min-width: 280px;
     }
   }
 
@@ -67,6 +86,14 @@
       bottom: 20.64px;
       right: 20.15px;
     }
+
+    @include mobileStyles {
+      bottom: -39.77px;
+      right: 4.99px;
+      width: 95px;
+      height: 95px;
+      background-image: url(../../../images/pineapple-s.png);
+    }
   }
 
   &__text-container {
@@ -78,6 +105,10 @@
       padding: 50px 0 0 0;
       flex-direction: row;
     }
+
+    @include mobileStyles {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -87,6 +118,14 @@
     @include tabletStyles {
       font-size: 30px;
       line-height: 38px;
+    }
+
+    @include mobileStyles {
+      flex-direction: column;
+      font-size: 20px;
+      line-height: 24px;
+      max-width: none;
+      padding-bottom: 30px;
     }
   }
 }

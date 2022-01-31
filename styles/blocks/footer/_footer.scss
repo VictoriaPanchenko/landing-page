@@ -2,6 +2,9 @@
     @include flex();
     background-color: #7A54F9;
 
+    @include mobileStyles {
+      flex-direction: column;
+    }
 
     &__logo {
         padding: 100px 0 100px 150px;
@@ -9,6 +12,11 @@
         @include tabletStyles {
           padding: 120px 0 150px 50px;
           width: 200px;
+        }
+
+        @include mobileStyles {
+          padding: 60px 0 0;
+          align-self: center;
         }
     }
 
@@ -21,6 +29,20 @@
         @include tabletStyles {
           padding: 120px 119px 0 0;
         }
+
+        @include mobileStyles {
+            padding: 50px 0 0 0;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: auto;
+            margin: 0 auto;
+        }
+    }
+
+    &__menu {
+      @include mobileStyles {
+          text-align: center;
+
+      }
     }
 
     &__contacts {
@@ -29,11 +51,22 @@
         @include tabletStyles {
           padding: 0 0 0 96px;
         }
+
+        @include mobileStyles {
+          padding: 50px 0 0 0;
+            grid-row: 2;
+            grid-column: 1;
+            text-align: center;
+        }
     }
 
     &__title {
       @include text($size: 23px, $line-height: 33px, $weight: 500, $color: $white);
         padding: 0 0 20px 0;
+
+        @include mobileStyles {
+          text-align: center;
+        }
     }
 
     &__list {
@@ -71,6 +104,13 @@
 
       @include tabletStyles {
         padding: 142px 0 50px 0;
+      }
+
+      @include mobileStyles {
+        padding: 50px 0 20px 0;
+        grid-row: 3;
+        grid-column: 1;
+        text-align: center;
       }
     }
 }

@@ -7,4 +7,8 @@
     top: 240px;
     left: 423px;
   }
+
+  @include mobileStyles {
+    display: none;
+  }
 }

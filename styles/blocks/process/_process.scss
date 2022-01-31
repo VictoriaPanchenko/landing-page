@@ -5,6 +5,12 @@
     @include text($weight: 500, $size: 60px, $line-height: 60px, $text-align:center, $letter-spacing: 0.5px, $color: $dark-blue);
 
     padding: 120px 0;
+
+    @include mobileStyles {
+      padding: 50px 0;
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   &__container {
@@ -17,6 +23,12 @@
     @include tabletStyles {
       padding: 60px;
     }
+
+    @include mobileStyles {
+      padding: 20px;
+      margin: 0 20px;
+      width: calc(100% - 20px * 2);
+    }
   }
 
   &__flex {
@@ -24,13 +36,17 @@
     //width: calc(100% - 100px * 2);
     @include tabletStyles {
       flex-direction: column;
-      min-width: 548px;
+      //min-width: 548px;
     }
   }
 
   &__flex-text {
     @include tabletStyles {
       padding-bottom: 60px;
+    }
+
+    @include mobileStyles {
+      padding-bottom: 50px;
     }
   }
 
@@ -51,6 +67,12 @@
     @include tabletStyles {
       padding: 60px;
     }
+
+    @include mobileStyles {
+      padding: 20px;
+      margin: 0 20px;
+      width: calc(100% - 20px * 2);
+    }
   }
 
   &__list {
@@ -64,6 +86,12 @@
       max-width: 255px;
       padding: 0 0 100px 0;
     }
+
+    @include mobileStyles {
+      padding: 10px 0 60px 0;
+      font-size: 22px;
+      line-height: 22px;
+    }
   }
 
   &__list-item {
@@ -73,6 +101,15 @@
 
     &:first-child {
       margin-top: 0;
+    }
+
+    @include mobileStyles {
+      margin: 0;
+      padding: 20px 0;
+    }
+
+    &:first-child {
+      padding: 0 0 20px 0;
     }
   }
 

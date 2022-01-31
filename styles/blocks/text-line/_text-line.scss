@@ -8,4 +8,10 @@
   width: 120%;
   left: -16px;
   padding: 20px 0;
-}
+
+  @include mobileStyles {
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}    

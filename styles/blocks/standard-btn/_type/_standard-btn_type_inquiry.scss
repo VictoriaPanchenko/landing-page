@@ -7,6 +7,9 @@
     border: 2px solid #E1FD2C;
   }
 
+  @include tabletStyles {
+    margin-top: 90px;
+  }
 }
 
 

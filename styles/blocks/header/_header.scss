@@ -47,8 +47,7 @@
     max-height: 600px;
 
     @include tabletStyles {
-      min-width: 668px;
-      min-height: 514;
+      max-width: 668px;
     }
   }
 

@@ -1,4 +1,5 @@
 .standard-btn {
+  font-family: "Inter", "Arial", sans-serif;
   @include text($weight: 500, $size: 18px, $line-height: 31px, $text-align: center, $color: $dark-blue, $letter-spacing: 0.3px);
   width: 163px;
   height: 55px;

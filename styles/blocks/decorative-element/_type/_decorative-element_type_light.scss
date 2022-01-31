@@ -2,4 +2,9 @@
   @include decorateRound();
   top: 123px;
   left: 622px;
+
+  @include tabletStyles {
+    top: 240px;
+    left: 423px;
+  }
 }

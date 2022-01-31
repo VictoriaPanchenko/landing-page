@@ -2,4 +2,9 @@
   @include decorateRound($color: $yellow, $radius: 138px, $border: 3px solid #1E3264);
   top: 321px;
   left: 721px;
+
+  @include tabletStyles {
+    top: 445px;
+    left: 470px;
+  }
 }

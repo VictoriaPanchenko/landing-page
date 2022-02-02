@@ -771,21 +771,18 @@
     height: 30px;
   }
 }
-.samples__name {
+.samples__form-input {
   display: flex;
   align-items: normal;
   justify-content: space-between;
   flex-direction: column;
   align-content: normal;
+}
+.samples__name {
   grid-row: 1;
   grid-column: 1;
 }
 .samples__lastname {
-  display: flex;
-  align-items: normal;
-  justify-content: space-between;
-  flex-direction: column;
-  align-content: normal;
   grid-row: 1;
   grid-column: 2;
 }
@@ -796,11 +793,6 @@
   }
 }
 .samples__email {
-  display: flex;
-  align-items: normal;
-  justify-content: space-between;
-  flex-direction: column;
-  align-content: normal;
   grid-row: 2;
   grid-column: 1/3;
 }

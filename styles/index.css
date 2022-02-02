@@ -206,6 +206,21 @@
   border-radius: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .standard-btn_type_sm {
+    width: 152px;
+    height: 51px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .standard-btn_type_try {
+    position: absolute;
+    top: 435px;
+  }
+}
+
 .standard-btn_type_inquiry {
   font-weight: 500;
   font-size: 18px;

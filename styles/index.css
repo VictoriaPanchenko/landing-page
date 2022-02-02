@@ -371,6 +371,16 @@
   }
 }
 @media screen and (max-width: 1280px) {
+  .process__flex-text_type_compound {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .process__flex-text_type_compound {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1280px) {
   .process__strawberry-pic {
     width: 100%;
   }
@@ -424,7 +434,7 @@
   }
 }
 .process__list-item {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   min-width: 255px;
   margin-top: 30px;
 }

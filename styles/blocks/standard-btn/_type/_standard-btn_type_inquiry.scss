@@ -14,11 +14,11 @@
     border: 2px solid #e1fd2c;
   }
 
-  @include tabletStyles {
+  @include tablet-styles {
     margin-top: 90px;
   }
 
-  @include mobileStyles {
+  @include mobile-styles {
     margin-top: 60px;
     width: 220px;
     height: 51px;

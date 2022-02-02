@@ -1,14 +1,12 @@
-@mixin flex($align-items: normal, $justify: space-between, $direction: row, $align-content: normal){
-    display: flex;
-    align-items: $align-items;
-    justify-content: $justify;
-    flex-direction: $direction;
-    align-content:  $align-content;
-
-    // можно писать if else
+@mixin flex($align-items: normal, $justify: space-between, $direction: row, $align-content: normal) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify;
+  flex-direction: $direction;
+  align-content: $align-content;
 }
 
-@mixin decorateRound($radius: 185px, $color: #E1FD2C, $border: 3px solid #016450){
+@mixin decorate-round($radius: 185px, $color: #e1fd2c, $border: 3px solid #016450) {
   position: absolute;
   width: $radius;
   height: $radius;
@@ -18,26 +16,33 @@
   box-sizing: border-box;
 }
 
-@mixin text($weight: 600, $size: 30px, $line-height: 30px, $text-align: start, $uppercase : none, $color: $white, $letter-spacing: normal){
-
-font-weight: $weight;
-font-size:  $size;
-line-height: $line-height;
-text-align: $text-align;
-text-transform: $uppercase;
-color: $color;
-letter-spacing: $letter-spacing;
+@mixin text(
+  $weight: 600,
+  $size: 30px,
+  $line-height: 30px,
+  $text-align: start,
+  $uppercase: none,
+  $color: $white,
+  $letter-spacing: normal
+) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  text-align: $text-align;
+  text-transform: $uppercase;
+  color: $color;
+  letter-spacing: $letter-spacing;
   padding: 0;
   margin: 0;
 }
 
-@mixin tabletStyles {
-    @media screen and (max-width: 1280px) {
-        @content;
-    }
+@mixin tablet-styles {
+  @media screen and (max-width: 1280px) {
+    @content;
+  }
 }
 
-@mixin mobileStyles {
+@mixin mobile-styles {
   @media screen and (max-width: 767px) {
     @content;
   }

@@ -9,7 +9,7 @@
   left: -16px;
   padding: 20px 0;
 
-  @include mobileStyles {
+  @include mobile-styles {
     margin: 20px 0 0 0;
     font-size: 20px;
     line-height: 24px;

@@ -1,14 +1,14 @@
 .decorative-element_type_light {
-  @include decorateRound();
+  @include decorate-round();
   top: 123px;
   left: 622px;
 
-  @include tabletStyles {
+  @include tablet-styles {
     top: 240px;
     left: 423px;
   }
 
-  @include mobileStyles {
+  @include mobile-styles {
     display: none;
   }
 }

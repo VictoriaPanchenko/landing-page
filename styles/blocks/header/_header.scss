@@ -8,18 +8,18 @@
     max-width: calc(100% - 50px * 2);
     padding: 40px 50px;
 
-    @include tabletStyles {
+    @include tablet-styles {
       padding: 40px 50px 126px 50px;
     }
 
-    @include mobileStyles {
+    @include mobile-styles {
       padding: 20px 20px 50px 20px;
       font-size: 20px;
     }
   }
 
   &__round {
-    @include decorateRound($radius: 565px, $color: #3530ff);
+    @include decorate-round($radius: 565px, $color: #3530ff);
     left: 1035px;
     top: -160px;
     opacity: 0.2;
@@ -31,12 +31,12 @@
     top: 50px;
     z-index: 1;
 
-    @include tabletStyles {
+    @include tablet-styles {
       top: 40px;
       width: 128px;
     }
 
-    @include mobileStyles {
+    @include mobile-styles {
       top: 20px;
       right: 20px;
       width: 94px;
@@ -48,11 +48,11 @@
     width: calc(100% - 50px * 2);
     margin: 0 50px;
 
-    @include tabletStyles {
+    @include tablet-styles {
       flex-direction: column;
     }
 
-    @include mobileStyles {
+    @include mobile-styles {
       margin: 0 20px;
     }
   }
@@ -61,11 +61,11 @@
     position: relative;
     max-height: 600px;
 
-    @include tabletStyles {
+    @include tablet-styles {
       max-width: 668px;
     }
 
-    @include mobileStyles {
+    @include mobile-styles {
       min-width: 280px;
     }
   }
@@ -82,12 +82,12 @@
     bottom: -36.36px;
     right: -36.36px;
 
-    @include tabletStyles {
+    @include tablet-styles {
       bottom: 20.64px;
       right: 20.15px;
     }
 
-    @include mobileStyles {
+    @include mobile-styles {
       bottom: -39.77px;
       right: 4.99px;
       width: 95px;
@@ -101,12 +101,12 @@
     @include flex($direction: column);
     padding: 278px 0 0 100px;
 
-    @include tabletStyles {
+    @include tablet-styles {
       padding: 50px 0 0 0;
       flex-direction: row;
     }
 
-    @include mobileStyles {
+    @include mobile-styles {
       flex-direction: column;
     }
   }
@@ -115,12 +115,12 @@
     @include text($weight: 600, $size: 40px, $line-height: 48px, $color: $white);
     max-width: 457px;
 
-    @include tabletStyles {
+    @include tablet-styles {
       font-size: 30px;
       line-height: 38px;
     }
 
-    @include mobileStyles {
+    @include mobile-styles {
       flex-direction: column;
       font-size: 20px;
       line-height: 24px;

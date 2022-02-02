@@ -19,7 +19,7 @@
   }
 
   &__round {
-    @include decorateRound($radius: 565px, $color: #3530FF);
+    @include decorateRound($radius: 565px, $color: #3530ff);
     left: 1035px;
     top: -160px;
     opacity: 0.2;
@@ -44,7 +44,7 @@
   }
 
   &__flex-container {
-    @include flex($justify:normal);
+    @include flex($justify: normal);
     width: calc(100% - 50px * 2);
     margin: 0 50px;
 
@@ -112,7 +112,7 @@
   }
 
   &__title {
-    @include text($weight: 600,  $size: 40px, $line-height: 48px, $color: $white);
+    @include text($weight: 600, $size: 40px, $line-height: 48px, $color: $white);
     max-width: 457px;
 
     @include tabletStyles {
@@ -135,5 +135,3 @@
     display: none;
   }
 }
-
-

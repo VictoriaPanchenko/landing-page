@@ -1,5 +1,14 @@
 .decorative-element_type_dark {
-  @include decorateRound($color: $yellow, $radius: 138px, $border: 3px solid #1E3264);
+  @include decorate-round($color: $yellow, $radius: 138px, $border: 3px solid #1e3264);
   top: 321px;
   left: 721px;
+
+  @include tablet-styles {
+    top: 445px;
+    left: 470px;
+  }
+
+  @include mobile-styles {
+    display: none;
+  }
 }

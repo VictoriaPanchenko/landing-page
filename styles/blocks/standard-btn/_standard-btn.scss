@@ -1,5 +1,13 @@
 .standard-btn {
-  @include text($weight: 500, $size: 18px, $line-height: 31px, $text-align: center, $color: $dark-blue, $letter-spacing: 0.3px);
+  font-family: "Inter", "Arial", sans-serif;
+  @include text(
+    $weight: 500,
+    $size: 18px,
+    $line-height: 31px,
+    $text-align: center,
+    $color: $dark-blue,
+    $letter-spacing: 0.3px
+  );
   width: 163px;
   height: 55px;
   border-radius: 0px;
@@ -8,10 +16,10 @@
   margin: 0;
   border: 0;
   cursor: pointer;
-}
 
-.standard-btn:hover {
-  border: 2px solid $dark-blue;
-  box-sizing: border-box;
-  border-radius: 10px;
+  &:hover {
+    border: 2px solid $dark-blue;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
 }

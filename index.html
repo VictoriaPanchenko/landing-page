@@ -1,100 +1,175 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Limonade">
-  <meta name="keywords" content="лимонад">
-  <meta name="author" content="Victoria Panchenko">
-  <link rel="stylesheet" href="./styles/index.css">
-  <title>Лимонады</title>
-</head>
-<body class="page">
-  <header class="header">
-    <p class="header__text">SODA</p>
-    <img class="header__logo" src="./images/logo-header-l.svg" alt="Сделано на Земле">
-    <div class="header__round"></div>
-    <div class="header__flex-container">
-    <div class="header__pic-container">
-    <img class="header__limo-pic" src="./images/limonades-pine-desktop.jpg" alt="Ананасовый лимонад">
-    <div class="header__sticker"></div>
-    </div>
-    <div class="header__text-container">
-    <h1 class="header__title">Вкусные лимонады из&nbsp;фруктов</h1>
-      <button class="standard-btn">Подробнее</button>
-  </div>
-    </div>
-  <div class="text-line">Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — </div>
-  </header>
-  <main class="main">
-    <section class="process">
-      <h2 class="process__title">Как это работает?</h2>
-      <div class="process__container">
-        <div class="process__flex">
-          <div class="flex-text">
-        <h3 class="container-title">Вкусы</h3>
-        <p class="container-text">Пейте фрукты, а не газировку со вкусовыми добавками, наши лимонады на 100% натуральны!</p>
-      </div>
-        <img class="process__strawberry-pic" src="./images/limonades-strawberry-desktop.png" alt="Клубничный лимонад">
-
-      </div>
-      </div>
-      <div class="process__nav-container">
-        <div class="process__flex">
-          <div class="flex-text">
-        <h3 class="container-title">Состав</h3>
-        <p class="container-text">Наши натуральные лимонады делаются из натуральных компонентов.</p>
-      </div>
-      <ul class="process__list">
-        <li class="process__list-item">Сок</li>
-        <li class="process__list-item">Пюре</li>
-        <li class="process__list-item">Вода</li>
-        <li class="process__list-item">Пузыри</li>
-        <li class="process__list-item">Витамины</li>
-      </ul>
-      </div>
-      <div class="decorative-element decorative-element_type_light"></div>
-      <div class="decorative-element decorative-element_type_dark"></div>
-      <button class="standard-btn">Подробнее</button>
-      </div>
-    </section>
-    <section class="samples">
-      <div class="samples__flex">
-      <h2 class="samples__main-title">SODA — натуральные лимонады!</h2>
-      <img class="samples__mango-pic" src="./images/limonades-mango-desktop.png" alt="Манго лимонад">
-      <div class="samples__sticker"></div>
-      </div>
-      <div class="samples__tastes">
-        <div class="samples__text-area">
-        <h3 class="samples__title">Семплы</h3>
-        <p class="samples__text">Хотите получить семплы каждого вкуса, чтобы понять что нравится вам? заполните форму!</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Limonade" />
+    <meta name="keywords" content="лимонад" />
+    <meta name="author" content="Victoria Panchenko" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Лимонады</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <p class="header__text">SODA</p>
+      <img
+        class="header__logo"
+        src="./images/logo-header-l.svg"
+        alt="Сделано на Земле"
+      />
+      <div class="header__round"></div>
+      <div class="header__flex-container">
+        <div class="header__pic-container">
+          <img
+            class="header__limo-pic"
+            src="./images/limonades-pine-desktop.jpg"
+            alt="Ананасовый лимонад"
+          />
+          <div class="header__sticker"></div>
         </div>
-        <div class="samples__form">
-          <h4 class="samples__form-header">Семплы</h4>
-          <form class="form" name="add-card">
-            <div class="form__fullname">
-              <div class="form__name-container">
-              <h5 class="form__text">Имя *</h5>
-              <input name="name" type="text" class="form__input">
-            </div>
-            <div class="form__name-container">
-            <h5 class="form__text">Фамилия *</h5>
-            <input name="surname" type="text" class="form__input">
-            </div>
-           </div>
-           <h5 class="form__text">Email *</h5>
-            <input name="email" type="text" class="form__input">
-            <button class="standard-btn standard-btn_type_inquiry">Запросить</button>
-          </form>
+        <div class="header__text-container">
+          <h1 class="header__title">Вкусные лимонады из&nbsp;фруктов</h1>
+          <button type="button" class="standard-btn standard-btn_type_sm">
+            Подробнее
+          </button>
         </div>
       </div>
-
-    </section>
-  </main>
-<footer class="footer">
-  <p class="footer__copyright">
-    &copy; 2022 Soda, Inc. All Rights Reserved.
-  </p>
-</footer>
-</body>
+      <div class="text-line">
+        h — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh — Fresh —
+        Fresh — Fresh — Fresh — Fresh — Fresh — Fresh —
+      </div>
+    </header>
+    <main class="main">
+      <section class="process">
+        <h2 class="process__title">Как это работает?</h2>
+        <div class="process__container">
+          <div class="process__flex">
+            <div class="process__flex-text">
+              <h3 class="container-title">Вкусы</h3>
+              <p class="container-text">
+                Пейте фрукты, а не газировку со вкусовыми добавками, наши
+                лимонады на 100% натуральны!
+              </p>
+            </div>
+            <img
+              class="process__strawberry-pic"
+              src="./images/limonades-strawberry-desktop.png"
+              alt="Клубничный лимонад"
+            />
+          </div>
+        </div>
+        <div class="process__nav-container">
+          <div class="process__flex">
+            <div class="process__flex-text_type_compound">
+              <h3 class="container-title">Состав</h3>
+              <p class="container-text">
+                Наши натуральные лимонады делаются из натуральных компонентов.
+              </p>
+            </div>
+            <ul class="process__list">
+              <li class="process__list-item">Сок</li>
+              <li class="process__list-item">Пюре</li>
+              <li class="process__list-item">Вода</li>
+              <li class="process__list-item">Пузыри</li>
+              <li class="process__list-item">Витамины</li>
+            </ul>
+          </div>
+          <div class="decorative-element decorative-element_type_light"></div>
+          <div class="decorative-element decorative-element_type_dark"></div>
+          <button type="button" class="standard-btn standard-btn_type_try">Попробовать</button>
+        </div>
+      </section>
+      <section class="samples">
+        <div class="samples__flex">
+          <h2 class="samples__main-title">SODA — натуральные лимонады!</h2>
+          <img
+            class="samples__mango-pic"
+            src="./images/limonades-mango-desktop.png"
+            alt="Манго лимонад"
+          />
+          <div class="samples__sticker"></div>
+        </div>
+        <div class="samples__tastes">
+          <div class="samples__text-area">
+            <h3 class="samples__title">Семплы</h3>
+            <p class="samples__text">
+              Хотите получить семплы каждого вкуса, чтобы понять что нравится
+              вам? заполните форму!
+            </p>
+          </div>
+          <div class="samples__form-wrapper">
+            <h4 class="samples__form-title">Семплы</h4>
+            <form class="samples__form">
+              <div class="samples__form-input samples__form-input_type_name">
+                <input
+                  type="text"
+                  class="samples__input"
+                  id="name"
+                  name="name"
+                />
+                <label for="name" class="samples__label">Имя *</label>
+              </div>
+              <div class="samples__form-input samples__form-input_type_lastname">
+                <input
+                  type="text"
+                  class="samples__input"
+                  id="lastname"
+                  name="lastname"
+                />
+                <label for="lastname" class="samples__label">Фамилия *</label>
+              </div>
+              <div class="samples__form-input samples__form-input_type_email">
+                <input
+                  type="text"
+                  class="samples__input"
+                  id="email"
+                  name="email"
+                />
+                <label for="email" class="samples__label">Email *</label>
+              </div>
+              <button
+                type="submit"
+                class="standard-btn standard-btn_type_inquiry"
+              >
+                Запросить
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img class="footer__logo" src="./images/logo-footer-l.svg" alt="SODA" />
+      <div class="footer__container">
+        <nav class="footer__menu">
+          <h5 class="footer__title">Меню</h5>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Вкусы</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Состав</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Семплы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__contacts">
+          <h5 class="footer__title">Контакты</h5>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__link footer__email">press@soda.io</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link footer__email">connect@soda.io</a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__copyright">
+          &copy; 2022 Soda, Inc. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

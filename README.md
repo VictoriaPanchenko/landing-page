@@ -2,7 +2,7 @@
 
 Landing pade 
 
-https://victoriapanchenko.github.io/landing-page/
+https://levvic.github.io/landing-page/
 
 Используемые технологии:
 - SASS
